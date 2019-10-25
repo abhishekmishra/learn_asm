@@ -10,6 +10,7 @@ _start:
 	mov bx, ax
 	mov cl, bh
 	mov ch, bl
+	xchg cl, ch
 ;Put your experiments between the two nops...
 	nop
 
