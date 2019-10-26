@@ -26,8 +26,10 @@ then
 fi
 
 mkdir -p ${SANDBOX_NAME}
-cp sandbox/newsandbox.asm ${SANDBOX_NAME}/sandbox.asm
+cp sandbox/newsandbox.asm ${SANDBOX_NAME}/${SANDBOX_NAME}.asm
 cp sandbox/Makefile ${SANDBOX_NAME}/
+sed -i "s/sandbox/${SANDBOX_NAME}/g" ${SANDBOX_NAME}/Makefile
 cp sandbox/.gitignore ${SANDBOX_NAME}/
+sed -i "s/sandbox/${SANDBOX_NAME}/g" ${SANDBOX_NAME}/.gitignore
 
 exit 0
