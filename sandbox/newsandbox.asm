@@ -1,7 +1,7 @@
 section .data
 section .text
 
-	global_start
+	global _start
 
 _start:
 	nop

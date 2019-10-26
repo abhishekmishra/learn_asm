@@ -1,10 +1,10 @@
-sandbox: sandbox.o
-	ld -o sandbox sandbox.o
+inc_dec: inc_dec.o
+	ld -o inc_dec inc_dec.o
 
-sandbox.o: sandbox.asm
-	nasm -f elf64 -g -F stabs sandbox.asm -l sandbox.lst
+inc_dec.o: inc_dec.asm
+	nasm -f elf64 -g -F stabs inc_dec.asm -l inc_dec.lst
 
-all: sandbox
+all: inc_dec
 
 clean:
-	rm -f sandbox.o sandbox.lst sandbox
+	rm -f inc_dec.o inc_dec.lst inc_dec
