@@ -6,6 +6,8 @@ section .text
 _start:
 	nop
 ;Put your experiments between the two nops...
+;Set the EAX to 5
+;Decrement till the result of the operation is 0
 	mov eax, 5
 DoMore:
 	dec eax
