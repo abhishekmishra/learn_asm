@@ -10,6 +10,8 @@ _start:
 	; gets -42 in two's complement
 	neg eax
 	add eax, 42
+	mov eax, 07FFFFFFh
+	inc eax
 ;Put your experiments between the two nops...
 	nop
 
